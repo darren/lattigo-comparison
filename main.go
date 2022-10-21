@@ -56,6 +56,10 @@ func main() {
 		evaluator.Add(ciphertext, ciphertexts[i], ciphertext) // 求和操作
 	}
 
+	// reference:
+	// 1. https://github.com/tuneinsight/lattigo/discussions/257
+	// 2. https://eprint.iacr.org/2021/315.pdf
+
 	/*
 		ciphertextMax := bfv.NewCiphertext(params, 1)      // 保存加密后的最大值
 		ciphertextMin := bfv.NewCiphertext(params, 1)      // 保存加密后的最小值
